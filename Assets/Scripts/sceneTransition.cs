@@ -10,7 +10,7 @@ public class sceneTransition : MonoBehaviour {
 
 	void Start () {
 		deathUI = GameObject.Find ("deathUI");
-		deathUI.SetActive (false);
+		//deathUI.SetActive (false);
 	}
 
 	void Update () {
@@ -18,10 +18,10 @@ public class sceneTransition : MonoBehaviour {
 		Death ();
 	}
 	void Death(){
+		deathUI.SetActive (true);
 		timeLimit -= Time.deltaTime;
 		Debug.Log (timeLimit);
 		if (timeLimit <= 0) {
-			deathUI.SetActive (true);
 			timeLimit = 0;
 			//Application.LoadLevel ("gameOver");
 			Debug.Log ("game over");
