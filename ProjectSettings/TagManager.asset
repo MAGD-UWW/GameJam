@@ -4,7 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - startPoint
   - player
   - blackF
   - whiteF
@@ -17,7 +16,6 @@ TagManager:
   - stickyWall
   - checkpoint
   - StickyWall
-  - startpoint
   layers:
   - Default
   - TransparentFX

@@ -51,8 +51,7 @@ public class characterMovement : MonoBehaviour {
 		charRB = GetComponent<Rigidbody>();
 		charTransform = GetComponent<Transform>();
 		
-		checkpointsScript = GetComponent<checkpoints>();
-		
+		//checkpointsScript = GameObject.FindWithName("checkPoints").GetComponent<checkpoints>();
 	}
 	
 	// Update is called once per frame
