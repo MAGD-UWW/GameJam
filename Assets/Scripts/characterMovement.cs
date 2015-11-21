@@ -166,10 +166,10 @@ public class characterMovement : MonoBehaviour {
 		
 		// Physics shift for on the wall
 		if (last == lastKey.left && (gravity == physics.wall)){
-			charRB.AddRelativeTorque(transform.up * rotationForce, ForceMode.Impulse);
+			charRB.AddRelativeTorque(transform.up * -rotationForce, ForceMode.Impulse);
 		}
 		if (last == lastKey.right && (gravity == physics.wall)){
-			charRB.AddRelativeTorque(transform.up * -rotationForce, ForceMode.Impulse);
+			charRB.AddRelativeTorque(transform.up * rotationForce, ForceMode.Impulse);
 		}
 	}
 	
@@ -185,11 +185,12 @@ public class characterMovement : MonoBehaviour {
 			
 			// FLIP CORRECTLY TO WALL
 			charRB.freezeRotation = true;
-			
-			if(charTransform.eulerAngles.y < 10.0f && charTransform.eulerAngles.y > 10.0f){
-				charTransform.rotation = Quaternion.Euler(0, 90, 0);
+			if(charTransform.eulerAngles.x > 80.0f && charTransform.eulerAngles.x < 100.0f){
+				charTransform.rotation = Quaternion.Euler(90, 0, 0);
+				//charTransform.rotation = Quaternion.Euler(270, 0, 0);
 			} else {
-				//charTransform.rotation = Quaternion.Euler(0, 180, 0);
+				//charTransform.rotation = Quaternion.Euler(90, 0, 0);
+				charTransform.rotation = Quaternion.Euler(270, 0, 0);
 			}
 		
 			charTransform.position = new Vector3(charTransform.position.x,charTransform.position.y, wall.position.z-0.76f); // check wall width!
