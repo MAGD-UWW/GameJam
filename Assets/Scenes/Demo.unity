@@ -116,7 +116,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -505,6 +505,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3cfca2eb182b22942a9bb72bb97ec567, type: 3}
+      propertyPath: m_TagString
+      value: whiteF
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3cfca2eb182b22942a9bb72bb97ec567, type: 3}
   m_IsPrefabParent: 0
@@ -647,6 +651,10 @@ Prefab:
     - target: {fileID: 400000, guid: 482163a54b330a54980f71f48b53c41b, type: 3}
       propertyPath: m_LocalScale.z
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 482163a54b330a54980f71f48b53c41b, type: 3}
+      propertyPath: m_TagString
+      value: blackF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 482163a54b330a54980f71f48b53c41b, type: 3}
