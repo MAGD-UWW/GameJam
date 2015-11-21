@@ -11,6 +11,8 @@ TagManager:
   - blackW
   - whiteW
   - endPiece
+  - checkpoint
+  - startpoint
   layers:
   - Default
   - TransparentFX

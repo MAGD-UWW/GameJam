@@ -25,6 +25,7 @@ public class checkpoints : MonoBehaviour {
 	void Falling(){//function to check and see if player is falling off map
 		if (player.position.y <= maxFallValue) {
 			Respawn();
+			Debug.Log("should respawn");
 		}
 	}
 

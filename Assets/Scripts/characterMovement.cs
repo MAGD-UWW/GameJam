@@ -12,6 +12,8 @@ public class characterMovement : MonoBehaviour {
 	public int rotationForce = 20;
 	private Transform wall;
 	
+	public checkpoints checkpointsScript;
+	
 	public Vector3 reverseTranslate;
 	
 	// variables for movement
@@ -48,6 +50,9 @@ public class characterMovement : MonoBehaviour {
 	void Start () {
 		charRB = GetComponent<Rigidbody>();
 		charTransform = GetComponent<Transform>();
+		
+		checkpointsScript = GetComponent<checkpoints>();
+		
 	}
 	
 	// Update is called once per frame
@@ -235,21 +240,30 @@ public class characterMovement : MonoBehaviour {
 				Debug.Log("black side down");
 				down = side.black;
 			}			
+			
+			// Death if falling in on wrong color
+			if ((col.CompareTag("blackF") &&  down == side.white) || (col.CompareTag("blackW") && down == side.white) || (col.CompareTag("whiteF") &&  down == side.black) || (col.CompareTag("whiteW") && down == side.black)){
+				// death function
+				checkpointsScript.Respawn();
+			}	
+			
+			
 			grounded = true;
 			Debug.Log ("grounded!");
 		}
 		
-		// Death if falling in on wrong color
-		if ((col.CompareTag("blackF") &&  down == side.white) || (col.CompareTag("blackW") && down == side.white) || (col.CompareTag("whiteF") &&  down == side.black) || (col.CompareTag("whiteW") && down == side.black)){
-			// death function
-		}	
-		
 		// ON MOVEMENT... if moving into wrong colored floor or wall
-		if ((col.CompareTag("blackF") &&  down == side.white && grounded) || (col.CompareTag("blackW") && down == side.white && onWall) || (col.CompareTag("whiteF") &&  down == side.black && grounded) || (col.CompareTag("whiteW") && down == side.black && onWall)){
-			charTransform.Translate(reverseTranslate,Space.World); 
-			//charTransform.Translate(-10,0,0 ,Space.World);
-			Debug.Log("bounceback");
+		if(grounded || onWall){
+			if ((col.CompareTag("blackF") &&  down == side.white) || (col.CompareTag("blackW") && down == side.white && onWall) || (col.CompareTag("whiteF") &&  down == side.black) || (col.CompareTag("whiteW") && down == side.black && onWall)){
+				charTransform.Translate(reverseTranslate,Space.World); 
+				//charTransform.Translate(-10,0,0 ,Space.World);
+				Debug.Log("bounceback");
+			}
 		}
+		
+
+		
+
 		
 	}
 	
