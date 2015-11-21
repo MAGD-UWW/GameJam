@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Demo.unity
   - enabled: 1
     path: Assets/Scenes/CheckpointDemo.unity
+  - enabled: 1
+    path: Assets/Scenes/gameOver.unity

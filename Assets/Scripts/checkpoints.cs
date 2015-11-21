@@ -5,8 +5,10 @@ public class checkpoints : MonoBehaviour {
 	public Transform player;
 	public Transform checkPoint;
 	public Transform startPoint;
-	bool checkpoint;
 	public float maxFallValue;
+	public float timeLimit;
+
+	bool checkpoint;
 
 	// Use this for initialization
 	void Start () {
@@ -17,8 +19,9 @@ public class checkpoints : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		checkpoint = boolCheck.checkpoint;
+		checkpoint = boolCheck.checkpoint; // references the boolean checkpoint in boolCheck script
 		Falling ();
+		Death ();
 	}
 
 	void Falling(){//function to check and see if player is falling off map
@@ -43,8 +46,11 @@ public class checkpoints : MonoBehaviour {
 	}
 
 	void Death(){
-		///if (time runs out){
-			//go to game over screen
-		// }
+		timeLimit -= Time.deltaTime;
+		Debug.Log (timeLimit);
+		if (timeLimit <= 0) {
+			//Application.LoadLevel ("gameOver");
+			Debug.Log ("game over");
+		}
 	}
 }

@@ -376,6 +376,7 @@ MonoBehaviour:
   checkPoint: {fileID: 0}
   startPoint: {fileID: 0}
   maxFallValue: -10
+  timeLimit: 10
 --- !u!1001 &1932017858
 Prefab:
   m_ObjectHideFlags: 0
