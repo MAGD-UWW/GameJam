@@ -11,7 +11,12 @@ TagManager:
   - blackW
   - whiteW
   - endPiece
+  - checkPoint
+  - startPoint
+  - ground
+  - stickyWall
   - checkpoint
+  - StickyWall
   - startpoint
   layers:
   - Default
