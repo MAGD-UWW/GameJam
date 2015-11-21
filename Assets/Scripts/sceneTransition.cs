@@ -10,11 +10,11 @@ public class sceneTransition : MonoBehaviour {
 
 	void Start () {
 		deathUI = GameObject.Find ("deathUI");
-		deathUI.SetActive (false);
+		//deathUI.SetActive (false);
 	}
 
 	void Update () {
-		timer.text = Mathf.Round(timeLimit).ToString ();
+		timer.text = (Mathf.Round(timeLimit*100f)/100f).ToString ();
 		Death ();
 	}
 	void Death(){
