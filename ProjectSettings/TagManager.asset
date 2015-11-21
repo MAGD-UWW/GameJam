@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - startPoint
+  - player
+  - blackF
+  - whiteF
+  - blackW
+  - whiteW
+  - endPiece
   layers:
   - Default
   - TransparentFX
