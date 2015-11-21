@@ -30,6 +30,7 @@ GameObject:
   - 65: {fileID: 6505492}
   - 65: {fileID: 6588470}
   - 137: {fileID: 13744288}
+  - 114: {fileID: 11454514}
   m_Layer: 0
   m_Name: Character
   m_TagString: player
@@ -61,7 +62,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.109999999, y: 5.17000008, z: -.550000012}
+  m_LocalPosition: {x: 2.00479412, y: .5, z: .886324883}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 460018}
@@ -213,6 +214,22 @@ MonoBehaviour:
   gravity: 0
   grounded: 0
   onWall: 0
+--- !u!114 &11454514
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efcb3f01356ccf642aed3a70c29272f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  checkPoint: {fileID: 0}
+  startPoint: {fileID: 0}
+  maxFallValue: -10
+  timeLimit: 10
 --- !u!137 &13744288
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
