@@ -277,7 +277,7 @@ public class characterMovement : MonoBehaviour {
 		}
 		// ON MOVEMENT... if moving into wrong colored floor or wall
 		if(grounded || onWall){
-			if ((col.CompareTag("blackF") &&  down == side.white) || (col.CompareTag("blackW") && down == side.white && onWall) || (col.CompareTag("whiteF") &&  down == side.black) || (col.CompareTag("whiteW") && down == side.black && onWall)){
+			if ((col.CompareTag("blackF") &&  down == side.white) || (col.CompareTag("blackW") && down == side.white) || (col.CompareTag("whiteF") &&  down == side.black) || (col.CompareTag("whiteW") && down == side.black)){
 				charTransform.Translate(reverseTranslate,Space.World); 
 				//charTransform.Translate(-10,0,0 ,Space.World);
 				Debug.Log("bounceback");
@@ -287,10 +287,10 @@ public class characterMovement : MonoBehaviour {
 	
 	void OnTriggerExit(Collider col) {
 		if (col.CompareTag("blackW") || col.CompareTag("whiteW")){
-			onWall = false;
+			//onWall = false;
 		}
 		if (col.CompareTag("blackF") || col.CompareTag("whiteF")){
-			grounded = false;
+			//grounded = false;
 		}	
 	}
 }
