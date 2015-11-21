@@ -354,6 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLimit: 0
+  deathUI: {fileID: 0}
 --- !u!4 &539368680
 Transform:
   m_ObjectHideFlags: 0
