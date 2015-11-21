@@ -10,7 +10,7 @@ public class sceneTransition : MonoBehaviour {
 
 	void Start () {
 		deathUI = GameObject.Find ("deathUI");
-		//deathUI.SetActive (false);
+		deathUI.SetActive (false);
 	}
 
 	void Update () {
@@ -19,13 +19,17 @@ public class sceneTransition : MonoBehaviour {
 	}
 	void Death(){
 <<<<<<< HEAD
+<<<<<<< HEAD
 		deathUI.SetActive (true);
 =======
 
 >>>>>>> origin/master
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 		timeLimit -= Time.deltaTime;
 		Debug.Log (timeLimit);
 		if (timeLimit <= 0) {
+			deathUI.SetActive (true);
 			timeLimit = 0;
 			//Application.LoadLevel ("gameOver");
 			Debug.Log ("game over");

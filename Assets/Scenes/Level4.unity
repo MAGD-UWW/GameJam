@@ -426,23 +426,6 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 1
   m_Mesh: {fileID: 4300000, guid: 26c626665c21c034e9f39a5803d77587, type: 3}
---- !u!114 &269420395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 269420389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54b405b2391cdad49b7ba9609b1e29b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  white1: {fileID: 0}
-  white2: {fileID: 0}
-  black1: {fileID: 0}
-  black2: {fileID: 0}
-  waitTime: 3
-  timer: 0
 --- !u!1001 &287055464
 Prefab:
   m_ObjectHideFlags: 0
@@ -452,11 +435,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 2073ca507fe016b4487d10915fa7c446, type: 3}
       propertyPath: m_LocalPosition.x
-      value: .0909999982
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2073ca507fe016b4487d10915fa7c446, type: 3}
       propertyPath: m_LocalPosition.y
-      value: .256999999
+      value: .564999998
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2073ca507fe016b4487d10915fa7c446, type: 3}
       propertyPath: m_LocalPosition.z
@@ -494,29 +477,9 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 2073ca507fe016b4487d10915fa7c446, type: 3}
-      propertyPath: m_TagString
-      value: whiteF
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2073ca507fe016b4487d10915fa7c446, type: 3}
   m_IsPrefabParent: 0
---- !u!1 &287055465 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100000, guid: 2073ca507fe016b4487d10915fa7c446, type: 3}
-  m_PrefabInternal: {fileID: 287055464}
---- !u!64 &287055466
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 287055465}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 4300000, guid: 2073ca507fe016b4487d10915fa7c446, type: 3}
 --- !u!1001 &477577797
 Prefab:
   m_ObjectHideFlags: 0
@@ -751,6 +714,7 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 1
   m_Mesh: {fileID: 4300000, guid: 26c626665c21c034e9f39a5803d77587, type: 3}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &1033238608
 Prefab:
@@ -1040,6 +1004,8 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1115392210}
 >>>>>>> origin/master
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1001 &1120097452
 Prefab:
   m_ObjectHideFlags: 0
@@ -1118,6 +1084,7 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 1
   m_Mesh: {fileID: 4300000, guid: 26c626665c21c034e9f39a5803d77587, type: 3}
+<<<<<<< HEAD
 --- !u!1001 &1310981922
 Prefab:
   m_ObjectHideFlags: 0
@@ -1411,6 +1378,8 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 >>>>>>> origin/master
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1001 &1584746975
 Prefab:
   m_ObjectHideFlags: 0
@@ -1489,6 +1458,7 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 1
   m_Mesh: {fileID: 4300000, guid: 26c626665c21c034e9f39a5803d77587, type: 3}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &1663251953
 Prefab:
@@ -1644,6 +1614,8 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 >>>>>>> origin/master
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1 &1738877610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,6 +1702,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 1
 --- !u!1001 &1843637445
 Prefab:
@@ -1812,6 +1785,9 @@ MeshCollider:
 =======
   m_RootOrder: 4
 >>>>>>> origin/master
+=======
+  m_RootOrder: 0
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1 &1923252859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1871,4 +1847,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 5
+=======
+  m_RootOrder: 1
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"

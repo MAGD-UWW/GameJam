@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8eb60815a07b2f84ca28a281334270ad
 timeCreated: 1448105603
+=======
+guid: ca5fbc60e2145524e858a67b244df2c5
+timeCreated: 1448102027
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 licenseType: Free
 DefaultImporter:
   userData: 
