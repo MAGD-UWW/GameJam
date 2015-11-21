@@ -2,14 +2,21 @@
 using System.Collections;
 
 public class levelChange : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
 	
+	public void levelOne() {
+		Debug.Log ("Loading Level One");
+		//Application.LoadLevel ("level1");
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public void levelTwo() {
+		Debug.Log ("Loading Level Two");
+		//Application.LoadLevel ("level2");
+	}
+	public void levelThree() {
+		Debug.Log ("Loading Level Three");
+		//Application.LoadLevel ("level3");
+	}
+	public void levelFour() {
+		Debug.Log ("Loading Level Four");
+		//Application.LoadLevel ("level4");
 	}
 }
