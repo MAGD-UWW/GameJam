@@ -4,6 +4,8 @@ using System.Collections;
 public class moveBlock : MonoBehaviour {
 	private bool dirRight = true;
 	public float speed = 2.0f;
+	public float xMax;
+	public float xMin;
 	
 	void Update () {
 		if (dirRight)
@@ -11,11 +13,11 @@ public class moveBlock : MonoBehaviour {
 		else
 			transform.Translate (-Vector2.right * speed * Time.deltaTime);
 		
-		if(transform.position.x >= 4.0f) {
+		if(transform.position.x >= xMax) {
 			dirRight = false;
 		}
 		
-		if(transform.position.x <= -4) {
+		if(transform.position.x <= xMin) {
 			dirRight = true;
 		}
 	}

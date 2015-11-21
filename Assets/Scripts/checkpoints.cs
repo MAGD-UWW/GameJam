@@ -6,12 +6,14 @@ public class checkpoints : MonoBehaviour {
 	public Transform checkPoint;
 	public Transform startPoint;
 	public float maxFallValue;
+	
+	public GameObject character;
 
 	bool checkpoint;
 
 	// Use this for initialization
 	void Start () {
-		player = GameObject.FindGameObjectWithTag ("player").transform;
+		//player = GameObject.FindGameObjectWithTag ("player").transform;
 		checkPoint = GameObject.FindGameObjectWithTag ("checkpoint").transform;
 		startPoint = GameObject.FindGameObjectWithTag ("startpoint").transform;
 	}
@@ -20,27 +22,36 @@ public class checkpoints : MonoBehaviour {
 	void Update () {
 		checkpoint = boolCheck.checkpoint; // references the boolean checkpoint in boolCheck script
 		Falling ();
+		character = GameObject.Find("Character");
+		if(character == null){
+			Debug.Log("finging new char");
+			character = GameObject.Find("Character");
+			}
 	}
 
 	void Falling(){//function to check and see if player is falling off map
-		if (player.position.y <= maxFallValue) {
-
+		if (character.transform.position.y <= maxFallValue) {
+			DestroyObject(character);
 			Respawn();
 			Debug.Log("should respawn");
-
 		}
 	}
 
-	public void Respawn(){// function to respawn player at checkpoint or start spot		
+	public void Respawn(){// function to respawn player at checkpoint or start spot
+		Debug.Log ("new instance");
 		if (checkpoint == true) {
-			player.position = checkPoint.position;
+			character = Instantiate(character, checkPoint.position, Quaternion.Euler(0, 0,0)) as GameObject;
+			
+			//player.position = checkPoint.position;
 		} else {
-			player.position = startPoint.position;
+			character = Instantiate(character, checkPoint.position, Quaternion.Euler(0, 0,0)) as GameObject;
+			//player.position = startPoint.position;
 		}
+		character = GameObject.Find("Character");
 	}
 
 	void OnTriggerEnter(){
-		if (player.position == checkPoint.position) {
+		if (character.transform.position == checkPoint.position) {
 			checkpoint = true;
 			Debug.Log ("Checkpoint is true");
 		}

@@ -10,10 +10,20 @@ public class cameraMovement : MonoBehaviour {
 	void Start () {
 		charTransform = character.GetComponent<Transform>();
 		charMoveScript = character.GetComponent<characterMovement>();
+		Screen.SetResolution(1280, 768, true);
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if(charTransform == null){
+			Debug.Log("finging new char");
+			character = GameObject.Find("Character");
+			charTransform = character.GetComponent<Transform>();
+			charMoveScript = character.GetComponent<characterMovement>();
+		}
+		
+		
 		transform.position = new Vector3(charTransform.position.x, charTransform.position.y + 15,charTransform.position.z-15);
 		/*
 		if(characterMovement.physics.wall == charMoveScript.gravity){
@@ -21,7 +31,7 @@ public class cameraMovement : MonoBehaviour {
 			Debug.Log("camaera shift!");
 		} else {
 			transform.position = new Vector3(charTransform.position.x, charTransform.position.y + 15,charTransform.position.z-15);
-		}
+		}	
 */
 	}
 }
