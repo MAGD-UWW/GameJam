@@ -18,7 +18,7 @@ public class cameraMovement : MonoBehaviour {
 	void Update () {
 		if(charTransform == null){
 			Debug.Log("finging new char");
-			character = GameObject.Find("Character");
+			character = GameObject.FindWithTag("player");
 			charTransform = character.GetComponent<Transform>();
 			charMoveScript = character.GetComponent<characterMovement>();
 		}

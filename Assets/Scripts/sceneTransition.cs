@@ -18,7 +18,11 @@ public class sceneTransition : MonoBehaviour {
 		Death ();
 	}
 	void Death(){
+<<<<<<< HEAD
 		deathUI.SetActive (true);
+=======
+
+>>>>>>> origin/master
 		timeLimit -= Time.deltaTime;
 		Debug.Log (timeLimit);
 		if (timeLimit <= 0) {

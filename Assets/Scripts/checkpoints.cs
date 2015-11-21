@@ -14,19 +14,19 @@ public class checkpoints : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//player = GameObject.FindGameObjectWithTag ("player").transform;
-		checkPoint = GameObject.FindGameObjectWithTag ("checkpoint").transform;
-		startPoint = GameObject.FindGameObjectWithTag ("startpoint").transform;
+		checkPoint = GameObject.FindGameObjectWithTag ("checkPoint").transform;
+		startPoint = GameObject.FindGameObjectWithTag ("startPoint").transform;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		checkpoint = boolCheck.checkpoint; // references the boolean checkpoint in boolCheck script
-		Falling ();
-		character = GameObject.Find("Character");
+		character = GameObject.FindWithTag("player");
 		if(character == null){
-			Debug.Log("finging new char");
-			character = GameObject.Find("Character");
+			//Debug.Log("finging new char");
+			character = GameObject.FindWithTag("player");
 			}
+		Falling ();
 	}
 
 	void Falling(){//function to check and see if player is falling off map
