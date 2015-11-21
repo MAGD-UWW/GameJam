@@ -716,6 +716,7 @@ MeshCollider:
   m_Mesh: {fileID: 4300000, guid: 26c626665c21c034e9f39a5803d77587, type: 3}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &1033238608
 Prefab:
   m_ObjectHideFlags: 0
@@ -1006,6 +1007,8 @@ CanvasRenderer:
 >>>>>>> origin/master
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1001 &1120097452
 Prefab:
   m_ObjectHideFlags: 0
@@ -1084,6 +1087,7 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 1
   m_Mesh: {fileID: 4300000, guid: 26c626665c21c034e9f39a5803d77587, type: 3}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &1310981922
 Prefab:
@@ -1380,6 +1384,8 @@ RectTransform:
 >>>>>>> origin/master
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1001 &1584746975
 Prefab:
   m_ObjectHideFlags: 0
@@ -1458,6 +1464,7 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 1
   m_Mesh: {fileID: 4300000, guid: 26c626665c21c034e9f39a5803d77587, type: 3}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &1663251953
@@ -1616,6 +1623,8 @@ RectTransform:
 >>>>>>> origin/master
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1 &1738877610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,6 +1712,7 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 1
 --- !u!1001 &1843637445
 Prefab:
@@ -1788,6 +1798,9 @@ MeshCollider:
 =======
   m_RootOrder: 0
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
+  m_RootOrder: 0
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1 &1923252859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1848,7 +1861,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 5
+=======
+  m_RootOrder: 1
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
   m_RootOrder: 1
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"

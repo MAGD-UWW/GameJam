@@ -505,6 +505,9 @@ Prefab:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1 &576516000
@@ -621,10 +624,13 @@ Transform:
 <<<<<<< HEAD
 >>>>>>> origin/master
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8fcf37a... Added Scene Transitions
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1001 &581036861
@@ -876,8 +882,12 @@ Prefab:
   m_IsPrefabParent: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!1 &723702837
+=======
+--- !u!1 &729987314
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 --- !u!1 &729987314
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -888,15 +898,21 @@ GameObject:
   serializedVersion: 4
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - 224: {fileID: 723702838}
   - 222: {fileID: 723702841}
   - 114: {fileID: 723702840}
   - 114: {fileID: 723702839}
 =======
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
   - 224: {fileID: 729987315}
   - 222: {fileID: 729987318}
   - 114: {fileID: 729987317}
   - 114: {fileID: 729987316}
+<<<<<<< HEAD
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
   m_Layer: 5
   m_Name: levelReset
@@ -906,7 +922,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!224 &723702838
+=======
+--- !u!224 &729987315
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 --- !u!224 &729987315
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -915,7 +935,11 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 723702837}
+=======
+  m_GameObject: {fileID: 729987314}
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
   m_GameObject: {fileID: 729987314}
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -924,8 +948,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 454289706}
   m_Father: {fileID: 305423141}
+=======
+  - {fileID: 851308954}
+  m_Father: {fileID: 1822761007}
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
   - {fileID: 851308954}
   m_Father: {fileID: 1822761007}
@@ -937,7 +966,11 @@ RectTransform:
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: .5, y: .5}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &723702839
+=======
+--- !u!114 &729987316
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 --- !u!114 &729987316
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -946,7 +979,11 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 723702837}
+=======
+  m_GameObject: {fileID: 729987314}
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
   m_GameObject: {fileID: 729987314}
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -980,17 +1017,23 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetGraphic: {fileID: 723702840}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
 =======
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
   m_TargetGraphic: {fileID: 729987317}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1573976116}
+<<<<<<< HEAD
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
         m_MethodName: restartLevel
         m_Mode: 1
@@ -1005,7 +1048,11 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &723702840
+=======
+--- !u!114 &729987317
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 --- !u!114 &729987317
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -1014,7 +1061,11 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 723702837}
+=======
+  m_GameObject: {fileID: 729987314}
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
   m_GameObject: {fileID: 729987314}
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -1040,7 +1091,11 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!222 &723702841
+=======
+--- !u!222 &729987318
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 --- !u!222 &729987318
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -1049,8 +1104,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 723702837}
 >>>>>>> origin/master
+=======
+  m_GameObject: {fileID: 729987314}
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
   m_GameObject: {fileID: 729987314}
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -1120,6 +1179,9 @@ Prefab:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1 &851308953
@@ -1590,6 +1652,9 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
   m_RootOrder: 14
@@ -1597,12 +1662,15 @@ Transform:
   m_RootOrder: 6
 >>>>>>> origin/master
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   m_RootOrder: 9
 >>>>>>> parent of 8fcf37a... Added Scene Transitions
 =======
   m_RootOrder: 9
 >>>>>>> origin/master
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1001 &1244352186
@@ -2185,6 +2253,9 @@ Prefab:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1 &1573976115
@@ -2255,10 +2326,13 @@ Transform:
 <<<<<<< HEAD
 >>>>>>> origin/master
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8fcf37a... Added Scene Transitions
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1001 &1643825841
@@ -2327,6 +2401,9 @@ Prefab:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1 &1822761006
@@ -2573,10 +2650,13 @@ Prefab:
 <<<<<<< HEAD
 >>>>>>> origin/master
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8fcf37a... Added Scene Transitions
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1 &2025624754
@@ -2668,6 +2748,9 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
   m_RootOrder: 10
@@ -2780,11 +2863,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 >>>>>>> origin/master
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   m_RootOrder: 8
 >>>>>>> parent of 8fcf37a... Added Scene Transitions
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!1001 &2103003611

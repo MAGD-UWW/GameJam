@@ -20,10 +20,13 @@ public class sceneTransition : MonoBehaviour {
 	void Death(){
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		deathUI.SetActive (true);
 =======
 
 >>>>>>> origin/master
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 		timeLimit -= Time.deltaTime;
