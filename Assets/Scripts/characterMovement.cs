@@ -141,8 +141,6 @@ public class characterMovement : MonoBehaviour {
 			gravity = physics.ground;
 		}
 		
-		
-		
 		if(gravity == physics.ground){
 			charTransform.Translate(moveH,0,moveV,Space.World);
 			Physics.gravity = new Vector3( 0, -9.8f, 0);
@@ -166,8 +164,8 @@ public class characterMovement : MonoBehaviour {
 	}
 	
 	void flip(lastKey last){ // send the last direction moved, which dictates the flip direction
-		Debug.Log ("flipping!");
-		Debug.Log(last);
+		//Debug.Log ("flipping!");
+		//Debug.Log(last);
 		if (last == lastKey.up){
 			charRB.AddRelativeTorque(transform.right * rotationForce, ForceMode.Impulse);
 		}
@@ -193,6 +191,35 @@ public class characterMovement : MonoBehaviour {
 	// collision with walls interaction
 	
 	void OnTriggerEnter(Collider col){
+		if (col.CompareTag("blackW") || col.CompareTag("whiteW")){
+			Debug.Log ("On the wall");
+			wall = col.GetComponent<Transform>();
+			//charRB.rotation= Quaternion.euler(0, 90, 0);
+			//charRB.isKinematic = true;
+			//charRB.useGravity = false;
+			
+			// FLIP CORRECTLY TO WALL
+			charRB.freezeRotation = true;
+			if(charTransform.eulerAngles.x > 80.0f && charTransform.eulerAngles.x < 100.0f){
+				charTransform.rotation = Quaternion.Euler(90, 0, 0);
+				//charTransform.rotation = Quaternion.Euler(270, 0, 0);
+			} else {
+				//charTransform.rotation = Quaternion.Euler(90, 0, 0);
+				charTransform.rotation = Quaternion.Euler(270, 0, 0);
+			}
+			
+			charTransform.position = new Vector3(charTransform.position.x,charTransform.position.y, wall.position.z-0.76f); // check wall width!
+			charRB.angularVelocity = Vector3.zero;
+			charRB.detectCollisions = true;
+			onWall = true;
+			//Quaternion deltaRotation = Quaternion.Euler(eulerAngleVelocity * Time.deltaTime);
+			//charRB.MoveRotation(charRB.rotation * deltaRotation);
+		}
+		
+		
+		
+		
+		/*
 		if (col.CompareTag("StickyWall")){
 			Debug.Log ("stickywall");
 			wall = col.GetComponent<Transform>();
@@ -216,42 +243,38 @@ public class characterMovement : MonoBehaviour {
 			onWall = true;
 			//Quaternion deltaRotation = Quaternion.Euler(eulerAngleVelocity * Time.deltaTime);
 			//charRB.MoveRotation(charRB.rotation * deltaRotation);
-		} 
-		
-		// Grounded detection
-		/*
-		if (col.CompareTag("ground")){
-			grounded = true;
-			Debug.Log ("grounded!");
 		}
-		*/
+		*/ 
+		
 		
 		// FROM JUMPING... if char landing on matching floor color...
-		if ((col.CompareTag("blackF") && !grounded) || (col.CompareTag("whiteF")) && !grounded){
-			charRB.freezeRotation = true;
-			//charRB.angularVelocity = Vector3.zero;
-			//Debug.Log(charTransform.rotation.eulerAngles);
-			if (((charTransform.eulerAngles.z > 170) && (charTransform.eulerAngles.z < 190))){
-				charTransform.rotation = Quaternion.Euler(0, 0, 180);
-				Debug.Log("white side down");
-				down = side.white;
-			} else{
-				charTransform.rotation = Quaternion.Euler(0, 0, 0);
-				Debug.Log("black side down");
-				down = side.black;
-			}			
-			
-			// Death if falling in on wrong color
-			if ((col.CompareTag("blackF") &&  down == side.white) || (col.CompareTag("blackW") && down == side.white) || (col.CompareTag("whiteF") &&  down == side.black) || (col.CompareTag("whiteW") && down == side.black)){
-				// death function
-				checkpointsScript.Respawn();
-			}	
-			
-			
-			grounded = true;
-			Debug.Log ("grounded!");
+		if(!grounded){
+			if (col.CompareTag("blackF") || col.CompareTag("whiteF")){
+				charRB.freezeRotation = true;
+				//charRB.angularVelocity = Vector3.zero;
+				//Debug.Log(charTransform.rotation.eulerAngles);
+				if (((charTransform.eulerAngles.z > 170) && (charTransform.eulerAngles.z < 190))){
+					charTransform.rotation = Quaternion.Euler(0, 0, 180);
+					Debug.Log("white side down");
+					down = side.white;
+				} else {
+					charTransform.rotation = Quaternion.Euler(0, 0, 0);
+					Debug.Log("black side down");
+					down = side.black;
+				}			
+				
+				// Death if falling in on wrong color
+				if ((col.CompareTag("blackF") &&  down == side.white) || (col.CompareTag("blackW") && down == side.white) || (col.CompareTag("whiteF") &&  down == side.black) || (col.CompareTag("whiteW") && down == side.black)){
+					// death function
+					
+					Debug.Log ("Dead!");
+					checkpointsScript.Respawn();
+					grounded = false;
+				}	
+				grounded = true;
+				Debug.Log ("grounded!");
+			}
 		}
-		
 		// ON MOVEMENT... if moving into wrong colored floor or wall
 		if(grounded || onWall){
 			if ((col.CompareTag("blackF") &&  down == side.white) || (col.CompareTag("blackW") && down == side.white && onWall) || (col.CompareTag("whiteF") &&  down == side.black) || (col.CompareTag("whiteW") && down == side.black && onWall)){
@@ -260,18 +283,13 @@ public class characterMovement : MonoBehaviour {
 				Debug.Log("bounceback");
 			}
 		}
-		
-
-		
-
-		
 	}
 	
 	void OnTriggerExit(Collider col) {
-		if (col.CompareTag("StickyWall")){
+		if (col.CompareTag("blackW") || col.CompareTag("whiteW")){
 			onWall = false;
 		}
-		if (col.CompareTag("ground")){
+		if (col.CompareTag("blackF") || col.CompareTag("whiteF")){
 			grounded = false;
 		}	
 	}

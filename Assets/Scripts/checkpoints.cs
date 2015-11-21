@@ -31,7 +31,7 @@ public class checkpoints : MonoBehaviour {
 		}
 	}
 
-	public void Respawn(){// function to respawn player at checkpoint or start spot
+	public void Respawn(){// function to respawn player at checkpoint or start spot		
 		if (checkpoint == true) {
 			player.position = checkPoint.position;
 		} else {
