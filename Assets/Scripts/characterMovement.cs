@@ -141,12 +141,12 @@ public class characterMovement : MonoBehaviour {
 		if(gravity == physics.ground){
 			charTransform.Translate(moveH,0,moveV,Space.World);
 			Physics.gravity = new Vector3( 0, -9.8f, 0);
-			reverseTranslate = new Vector3(moveH,0,moveV);
+			reverseTranslate = new Vector3(-moveH,0,-moveV);
 			
 		} else {
 			charTransform.Translate(moveH,moveV,0,Space.World);
 			Physics.gravity = new Vector3( 0,0,9.8f);
-			reverseTranslate = new Vector4(moveH,moveV,0);
+			reverseTranslate = new Vector3(-moveH,-moveV,0);
 		}
 	}
 	
@@ -222,7 +222,7 @@ public class characterMovement : MonoBehaviour {
 		*/
 		
 		// FROM JUMPING... if char landing on matching floor color...
-		if ((col.CompareTag("blackF") && down == side.black && !grounded) || (col.CompareTag("whiteF")) && down == side.white && !grounded){
+		if ((col.CompareTag("blackF") && !grounded) || (col.CompareTag("whiteF")) && !grounded){
 			charRB.freezeRotation = true;
 			//charRB.angularVelocity = Vector3.zero;
 			//Debug.Log(charTransform.rotation.eulerAngles);
@@ -239,11 +239,6 @@ public class characterMovement : MonoBehaviour {
 			Debug.Log ("grounded!");
 		}
 		
-		
-		
-		
-		
-		
 		// Death if falling in on wrong color
 		if ((col.CompareTag("blackF") &&  down == side.white) || (col.CompareTag("blackW") && down == side.white) || (col.CompareTag("whiteF") &&  down == side.black) || (col.CompareTag("whiteW") && down == side.black)){
 			// death function
@@ -252,6 +247,8 @@ public class characterMovement : MonoBehaviour {
 		// ON MOVEMENT... if moving into wrong colored floor or wall
 		if ((col.CompareTag("blackF") &&  down == side.white && grounded) || (col.CompareTag("blackW") && down == side.white && onWall) || (col.CompareTag("whiteF") &&  down == side.black && grounded) || (col.CompareTag("whiteW") && down == side.black && onWall)){
 			charTransform.Translate(reverseTranslate,Space.World); 
+			//charTransform.Translate(-10,0,0 ,Space.World);
+			Debug.Log("bounceback");
 		}
 		
 	}
