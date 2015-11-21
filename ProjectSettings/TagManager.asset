@@ -6,10 +6,16 @@ TagManager:
   tags:
   - ground
   - StickyWall
+<<<<<<< HEAD
   - blackF
   - whiteF
   - blackW
   - whiteW
+=======
+  - player
+  - checkpoint
+  - startpoint
+>>>>>>> origin/master
   layers:
   - Default
   - TransparentFX

@@ -114,7 +114,6 @@ public class characterMovement : MonoBehaviour {
 			} else{
 				charTransform.rotation = Quaternion.Euler(0, 0, 0);
 				Debug.Log("white side up");
-				
 			}
 			//transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, transform.rotation.z);
 		}
@@ -164,13 +163,17 @@ public class characterMovement : MonoBehaviour {
 		if (last == lastKey.right && (gravity == physics.ground)){
 			charRB.AddRelativeTorque(transform.forward * -rotationForce, ForceMode.Impulse);
 		}
+		
+		// Physics shift for on the wall
 		if (last == lastKey.left && (gravity == physics.wall)){
-			charRB.AddRelativeTorque(transform.up * rotationForce, ForceMode.Impulse);
-		}
-		if (last == lastKey.right && (gravity == physics.wall)){
 			charRB.AddRelativeTorque(transform.up * -rotationForce, ForceMode.Impulse);
 		}
+		if (last == lastKey.right && (gravity == physics.wall)){
+			charRB.AddRelativeTorque(transform.up * rotationForce, ForceMode.Impulse);
+		}
 	}
+	
+	// collision with walls interaction
 	
 	void OnTriggerEnter(Collider col){
 		if (col.CompareTag("StickyWall")){
@@ -179,7 +182,17 @@ public class characterMovement : MonoBehaviour {
 			//charRB.rotation= Quaternion.euler(0, 90, 0);
 			//charRB.isKinematic = true;
 			//charRB.useGravity = false;
-			charTransform.rotation = Quaternion.Euler(90, 0, 0);
+			
+			// FLIP CORRECTLY TO WALL
+			charRB.freezeRotation = true;
+			if(charTransform.eulerAngles.x > 80.0f && charTransform.eulerAngles.x < 100.0f){
+				charTransform.rotation = Quaternion.Euler(90, 0, 0);
+				//charTransform.rotation = Quaternion.Euler(270, 0, 0);
+			} else {
+				//charTransform.rotation = Quaternion.Euler(90, 0, 0);
+				charTransform.rotation = Quaternion.Euler(270, 0, 0);
+			}
+		
 			charTransform.position = new Vector3(charTransform.position.x,charTransform.position.y, wall.position.z-0.76f); // check wall width!
 			charRB.angularVelocity = Vector3.zero;
 			charRB.detectCollisions = true;
