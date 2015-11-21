@@ -481,7 +481,7 @@ GameObject:
   - 54: {fileID: 1347449746}
   m_Layer: 0
   m_Name: ground
-  m_TagString: ground
+  m_TagString: whiteF
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
