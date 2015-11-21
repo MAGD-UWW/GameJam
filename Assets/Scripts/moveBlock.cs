@@ -2,27 +2,21 @@
 using System.Collections;
 
 public class moveBlock : MonoBehaviour {
-	public Vector3 xMove;
-	public float maxZ;
-	public float minZ;
-	// Use this for initialization
-	void Start () {
+	private bool dirRight = true;
+	public float speed = 2.0f;
 	
-	}
-	
-	// Update is called once per frame
 	void Update () {
-		movingBlock ();
-		xMove = Vector3.forward * Time.deltaTime;
-	}
-
-	void movingBlock(){
-		transform.Translate(xMove);
-		if (transform.position.z == maxZ) {
-			transform.Translate (-xMove);
+		if (dirRight)
+			transform.Translate (Vector2.right * speed * Time.deltaTime);
+		else
+			transform.Translate (-Vector2.right * speed * Time.deltaTime);
+		
+		if(transform.position.x >= 4.0f) {
+			dirRight = false;
 		}
-		if (transform.position.z == minZ){
-			transform.Translate (xMove);
+		
+		if(transform.position.x <= -4) {
+			dirRight = true;
 		}
 	}
 }
