@@ -14,8 +14,8 @@ public class checkpoints : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//player = GameObject.FindGameObjectWithTag ("player").transform;
-		checkPoint = GameObject.FindGameObjectWithTag ("checkpoint").transform;
-		startPoint = GameObject.FindGameObjectWithTag ("startpoint").transform;
+		checkPoint = GameObject.FindGameObjectWithTag ("checkPoint").transform;
+		startPoint = GameObject.FindGameObjectWithTag ("startPoint").transform;
 	}
 	
 	// Update is called once per frame
