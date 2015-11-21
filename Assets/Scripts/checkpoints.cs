@@ -6,7 +6,6 @@ public class checkpoints : MonoBehaviour {
 	public Transform checkPoint;
 	public Transform startPoint;
 	public float maxFallValue;
-	public float timeLimit;
 
 	bool checkpoint;
 
@@ -21,7 +20,6 @@ public class checkpoints : MonoBehaviour {
 	void Update () {
 		checkpoint = boolCheck.checkpoint; // references the boolean checkpoint in boolCheck script
 		Falling ();
-		Death ();
 	}
 
 	void Falling(){//function to check and see if player is falling off map
@@ -42,15 +40,6 @@ public class checkpoints : MonoBehaviour {
 		if (player.position == checkPoint.position) {
 			checkpoint = true;
 			Debug.Log ("Checkpoint is true");
-		}
-	}
-
-	void Death(){
-		timeLimit -= Time.deltaTime;
-		Debug.Log (timeLimit);
-		if (timeLimit <= 0) {
-			//Application.LoadLevel ("gameOver");
-			Debug.Log ("game over");
 		}
 	}
 }
