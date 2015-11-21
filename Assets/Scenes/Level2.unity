@@ -788,11 +788,14 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 54
 =======
   m_RootOrder: 57
 >>>>>>> origin/master
 =======
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
   m_RootOrder: 57
@@ -1009,6 +1012,9 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 438157402}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -1682,8 +1688,12 @@ MeshCollider:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!1 &724273124
+=======
+--- !u!1 &751283971
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 --- !u!1 &751283971
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -1698,6 +1708,7 @@ GameObject:
   m_Component:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - 224: {fileID: 724273125}
   - 223: {fileID: 724273128}
   - 114: {fileID: 724273127}
@@ -1707,6 +1718,8 @@ GameObject:
 =======
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
   - 224: {fileID: 751283975}
   - 223: {fileID: 751283974}
   - 114: {fileID: 751283973}
@@ -1714,6 +1727,9 @@ GameObject:
   m_Layer: 5
   m_Name: timerUI
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -1722,6 +1738,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!224 &724273125
@@ -1750,13 +1767,20 @@ RectTransform:
 =======
 --- !u!114 &751283972
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
+--- !u!114 &751283972
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 724273124}
+=======
+  m_GameObject: {fileID: 751283971}
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
   m_GameObject: {fileID: 751283971}
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -1775,7 +1799,11 @@ MonoBehaviour:
     m_Bits: 4294967295
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &724273127
+=======
+--- !u!114 &751283973
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 --- !u!114 &751283973
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -1788,7 +1816,11 @@ MonoBehaviour:
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 724273124}
+=======
+  m_GameObject: {fileID: 751283971}
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
   m_GameObject: {fileID: 751283971}
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -1812,7 +1844,11 @@ MonoBehaviour:
   m_DynamicPixelsPerUnit: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!223 &724273128
+=======
+--- !u!223 &751283974
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 --- !u!223 &751283974
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -1825,7 +1861,11 @@ Canvas:
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 724273124}
+=======
+  m_GameObject: {fileID: 751283971}
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
   m_GameObject: {fileID: 751283971}
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -1845,8 +1885,11 @@ Canvas:
   m_SortingOrder: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/master
 =======
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!224 &751283975
@@ -1868,6 +1911,9 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -4142,8 +4188,12 @@ MeshCollider:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!1 &1603274427
+=======
+--- !u!1 &1566931059
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 --- !u!1 &1566931059
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -4158,11 +4208,14 @@ GameObject:
   m_Component:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - 4: {fileID: 1603274429}
   - 114: {fileID: 1603274428}
   m_Layer: 0
   m_Name: SceneTransition
 =======
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
   - 224: {fileID: 1566931060}
@@ -4171,6 +4224,9 @@ GameObject:
   m_Layer: 5
   m_Name: timer
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -4181,8 +4237,11 @@ GameObject:
   m_IsActive: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &1603274428
 =======
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 --- !u!224 &1566931060
@@ -4204,6 +4263,9 @@ RectTransform:
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1566931061
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -4211,6 +4273,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 1603274427}
@@ -4236,6 +4299,8 @@ Transform:
   m_RootOrder: 46
 >>>>>>> origin/master
 =======
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
   m_GameObject: {fileID: 1566931059}
@@ -4272,6 +4337,9 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1566931059}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -4590,8 +4658,12 @@ MeshCollider:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!1 &1707346887
+=======
+--- !u!1 &1713975844
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 --- !u!1 &1713975844
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -4606,6 +4678,7 @@ GameObject:
   m_Component:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - 224: {fileID: 1707346890}
   - 222: {fileID: 1707346889}
   - 114: {fileID: 1707346888}
@@ -4614,12 +4687,17 @@ GameObject:
 =======
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
   - 224: {fileID: 1713975847}
   - 222: {fileID: 1713975846}
   - 114: {fileID: 1713975845}
   m_Layer: 5
   m_Name: Text
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -4630,7 +4708,11 @@ GameObject:
   m_IsActive: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &1707346888
+=======
+--- !u!114 &1713975845
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 --- !u!114 &1713975845
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -4643,7 +4725,11 @@ MonoBehaviour:
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 1707346887}
+=======
+  m_GameObject: {fileID: 1713975844}
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
   m_GameObject: {fileID: 1713975844}
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -4667,7 +4753,11 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_FontSize: 26
+=======
+    m_FontSize: 14
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
     m_FontSize: 14
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -4680,7 +4770,11 @@ MonoBehaviour:
     m_MaxSize: 40
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Alignment: 0
+=======
+    m_Alignment: 4
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
     m_Alignment: 4
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -4693,9 +4787,12 @@ MonoBehaviour:
     m_LineSpacing: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Text: 
 --- !u!222 &1707346889
 =======
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
   m_Text: 'Quit
@@ -4703,6 +4800,9 @@ MonoBehaviour:
 '
 --- !u!222 &1713975846
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
@@ -4710,6 +4810,7 @@ CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 1707346887}
@@ -4722,10 +4823,15 @@ CanvasRenderer:
   m_GameObject: {fileID: 1713975844}
 --- !u!224 &1713975847
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
+  m_GameObject: {fileID: 1713975844}
+--- !u!224 &1713975847
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 1707346887}
@@ -4744,6 +4850,8 @@ RectTransform:
 =======
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
   m_GameObject: {fileID: 1713975844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -4757,6 +4865,9 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of fa70964... Revert "Added Scene Transitions"
+=======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
 =======
 >>>>>>> parent of fa70964... Revert "Added Scene Transitions"
